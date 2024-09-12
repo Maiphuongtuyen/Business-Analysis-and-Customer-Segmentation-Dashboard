@@ -10,12 +10,12 @@ https://learn.microsoft.com/en-us/dax/dax-sample-model
 ### Business Questions
 <br>Now, let's dive into analyzing the data to uncover some key business questions
 
-1. Which channel is more profitable: Internet Sales or Reseller Sales? Let's analyze both. 
+***1. Which channel is more profitable: Internet Sales or Reseller Sales? Let's analyze both. 
 2. What are our peak sales months and quarters? This will help us plan our future business strategies. 
 3. We need to assess our company's health. Are we on the right track or are we struggling? 
 4. Let's analyze the buying habits of our customers in each market. 
 5. Which products are our best sellers, and which ones should we consider discontinuing? 
-6. Finally, using the RFM model, let's analyze the purchasing behavior of different customer segments and make recommendations
+6. Finally, using the RFM model, let's analyze the purchasing behavior of different customer segments and make recommendations***
 
 ### Data Preprocessing
 Since my data includes two tables, FactInternetSales and FactResellerSales, which contain detailed information about orders from the Internet and reseller sales channels, respectively, I will append these two tables together using a UNION statement in SQL
@@ -49,11 +49,13 @@ The market with the greatest number of consumers and sales is North America. App
 
 #### 5. Which Products Should Be Discontinued and Which Should Be Invested In?
 
-The products with the highest revenue, highest sales, and steady increase over time are the most commercially successful ones
+*The products with the highest revenue, highest sales, and steady increase over time are the most commercially successful ones*
 
 <br>Road bikes, mountain bikes, touring bikes, road frames, mountain frames, and mostly other bicycles and bicycle components are the products with the biggest revenue and sales. In addition, there are apparel and accessory items like helmets and jerseys. Since the number of units sold each year rises in comparison to the previous year, these products have demonstrated strong success and a consistent rising trend year over year.
 <br>But when the median profit for each road bike and touring bike sold is calculated, the result is negative. With each road bike or touring bike sold, the business, on average, forfeits a part of its profit. This will not be a financially sustainable condition in the long run. To acquire market share and use an upselling method, the corporation is presumably pursuing a market penetration plan. The sharp increase in sales since July 2019 and the fact that bicycles and parts have a far smaller profit margin than apparel and accessories may both be explained by this. (For instance, an average bicycle costs $884 and brings in a profit of $50 per unit. On the other hand, clothing items that cost only $8 can generate a profit of $6).
-<br>When a product continuously underperforms over time in terms of quantity sold as well as sales, I think it should be discontinued.
+
+<br>*When a product continuously underperforms over time in terms of quantity sold as well as sales, I think it should be discontinued.*
+
 <br>Sales volume should be taken into account while examining the products that generate the least money. For instance, even though hat sales may not be great, this does not always imply that they are functioning poorly because revenue is impacted by both quantity and price. Hat sales are impressive, with over 8300 units sold (keeping in mind that other products typically have low sales volumes of less than 1000, depending on the market and price). With the exception of pumps and locks, we discovered that products like caps, socks, and cleansers have had favorable sales increase over the previous year.
 <br>The two products with the lowest revenue and sales volume are pumps and locks, both of which had negative growth rates in 2019 and 2020. Actually, throughout the first half of 2020, not a single lock or pump was sold. In addition, sales of products like headsets and forks are the lowest, and their revenue has remained constant over the past few years.
 The top items that people most commonly buy in the same order are: Water Bottles and Bottle Cages, AWC Logo Caps and Long Sleeve Logo Jerseys, Helmets and AWC Logo Caps, Mountain Tire Tubes and Mountain Tires...
@@ -76,42 +78,40 @@ The graph illustrates how customers' willingness to pay has sharply declined ove
 
 Although the Lost Customer segment accounts for 30% of the customer base, they spend an average of $100 per order and then leave, so their contribution to the company’s revenue is minimal. Other customer segments are similar; only the three segments 'Champions,' 'Loyal Customers,' and 'Need Attentions' generate nearly 90% of the company's revenue. The company needs to find ways to retain these customers and implement appropriate marketing programs. Additionally, it is important to find ways to attract the 'Potential Loyalists' segment, as they frequently purchase products and are almost as valuable as the Champions, but they have not yet spent as much per order as the top three segments. To facilitate the development of retention strategies for each customer segment, I have compiled the information below:
 <br>
-Champion Segment is Crucial (444, 434, 344, 443, 433): Although making up only 10% of the whole client base, the Champion segment brings in a healthy $74.6 million in sales, which accounts for a sizeable amount of the business's overall profits. These clients are extremely valued because their orders often total more than $2,200. Their buying habits have been consistent over the past two years, with the exception of a profit decline in July and September 2019 brought on by discount coupons. Sustaining revenue requires this area to be nurtured and maintained.
+***Champion Segment is Crucial (444, 434, 344, 443, 433):*** Although making up only 10% of the whole client base, the Champion segment brings in a healthy $74.6 million in sales, which accounts for a sizeable amount of the business's overall profits. These clients are extremely valued because their orders often total more than $2,200. Their buying habits have been consistent over the past two years, with the exception of a profit decline in July and September 2019 brought on by discount coupons. Sustaining revenue requires this area to be nurtured and maintained.
 <br>
 => They bought recently, buy often and spend the most. We should reward these customers. They promote our products, and they can be early adopters of our new launches.
 <br>
-Loyal Customers Provide Stability (244, 234, 334, 442, 441, 432, 431, 342, 341): Over $10 million is contributed by loyal customers, who make up 15% of the customer base. They began making more purchases in 2020, even though their order value varies more than the Champions' does. But their average order value has dropped, indicating a move in favor of less expensive goods. They may improve their profitability by finding ways to raise the value of their orders while keeping them frequent.
+***Loyal Customers Provide Stability (244, 234, 334, 442, 441, 432, 431, 342, 341):*** Over $10 million is contributed by loyal customers, who make up 15% of the customer base. They began making more purchases in 2020, even though their order value varies more than the Champions' does. But their average order value has dropped, indicating a move in favor of less expensive goods. They may improve their profitability by finding ways to raise the value of their orders while keeping them frequent.
 <br>
 => They spend good money often, they are responsive to promotions. These customers are responsive to our promotions. We need to suggest higher-value products to them. Also, leverage them for reviews.
 <br>
-Potential Loyalists are Emerging (424, 423, 324, 323, 413, 414, 343): Despite making up only 4% of the total clientele, this group has sales of over $1 million, suggesting promise. Their frequency of purchases is similar to that of the Champions, but they have started to spend more money per time, which suggests room for expansion. These consumers could become Champions with the help of targeted marketing.
+***Potential Loyalists are Emerging (424, 423, 324, 323, 413, 414, 343):*** Despite making up only 4% of the total clientele, this group has sales of over $1 million, suggesting promise. Their frequency of purchases is similar to that of the Champions, but they have started to spend more money per time, which suggests room for expansion. These consumers could become Champions with the help of targeted marketing.
 <br>
 => They are recent customers, but spent a good amount and bough more than once. Engage them with long-term offers like loyalty programs or membership rewards, suggest other categories of products to them.
 <br>
-Potential Growth for Promising Customers (333, 332, 331, 313): This sector, which makes up 8% of the total customer base, has had a notable rise in orders in 2020, despite the relatively low order value of $700. Since the middle of 2019, the average order value has decreased, which may indicate price sensitivity or a change in consumer behavior. More potential in this market could be unlocked by promoting higher-value purchases.
+***Potential Growth for Promising Customers (333, 332, 331, 313):*** This sector, which makes up 8% of the total customer base, has had a notable rise in orders in 2020, despite the relatively low order value of $700. Since the middle of 2019, the average order value has decreased, which may indicate price sensitivity or a change in consumer behavior. More potential in this market could be unlocked by promoting higher-value purchases.
 <br>
 => They are recent shoppers, but haven't spent much. Try to convert them into loyal customers by creating brand awareness and giving free trials.
 <br>
-Opportunities for Growth Are Provided by New consumers (422, 421, 412, 411, 311, 321, 312, 322): 18% of the customer base consists of new consumers who have just recently begun making purchases, with an average order value of $40. Even while they now generate less revenue, their significant share suggests that, should they be kept and developed into more lucrative sectors like Loyal or Champion customers, there may be room for future growth.
+***Opportunities for Growth Are Provided by New consumers (422, 421, 412, 411, 311, 321, 312, 322):*** 18% of the customer base consists of new consumers who have just recently begun making purchases, with an average order value of $40. Even while they now generate less revenue, their significant share suggests that, should they be kept and developed into more lucrative sectors like Loyal or Champion customers, there may be room for future growth.
 <br>
 => They bought more recently but not often. For new users, make their onboarding experience smooth and provide assistance when needed.
 <br>
-Price Sensitive Require Different Strategies (131, 132, 141, 142, 231, 232, 241, 242): This little percentage of consumers (3%), who regularly place low-value orders of between $40 and $50, are extremely price sensitive. They buy a lot, so customized deals that keep them loyal without cutting into profit margins might work. Strategies like bundling or upselling could also raise the value of their order.
+***Price Sensitive Require Different Strategies (131, 132, 141, 142, 231, 232, 241, 242):*** This little percentage of consumers (3%), who regularly place low-value orders of between $40 and $50, are extremely price sensitive. They buy a lot, so customized deals that keep them loyal without cutting into profit margins might work. Strategies like bundling or upselling could also raise the value of their order.
 <br>
 => They spend frequently, but at a low monetary value, possibly because they are picky or cautious with their spending. These are users looking for the best deal. We should recommend the highest-rated products and send discount communication.
 <br>
-Need Attention Is Not Fully Utilized (243, 233, 224, 214, 213, 134, 144, 143, 133): These customers generate the second-highest revenue category with $18.6 million, but their order frequency is low and their order interval is the longest (271 days). When they do make purchases, though, they often spend a lot—sometimes more than $11,000 in a single order. Increased engagement with this market could result in a significant increase in revenue. Because of the great value of this group, reactivation tactics and customized marketing could promote more regular purchases.
+***Need Attention Is Not Fully Utilized (243, 233, 224, 214, 213, 134, 144, 143, 133):*** These customers generate the second-highest revenue category with $18.6 million, but their order frequency is low and their order interval is the longest (271 days). When they do make purchases, though, they often spend a lot—sometimes more than $11,000 in a single order. Increased engagement with this market could result in a significant increase in revenue. Because of the great value of this group, reactivation tactics and customized marketing could promote more regular purchases.
 <br>
 => Spent above recency, frequency and monetary values in the past, but have not bought for a while. We need to bring back these customers. Provide limited-period offers and recommend products based on their purchase history.
 <br>
-Recovering Lost Customers (111, 112, 113, 114, 121, 122, 123, 211, 212): This group, which makes up 29% of the total customer base, spends $2.8 million but only makes one transaction before quitting. A drop in order value and a big increase in orders placed after July 2019 point to discontent or evolving requirements. Recognizing the reasons behind their departure and putting recovery plans in place could lower attrition and recover lost income.
+***Recovering Lost Customers (111, 112, 113, 114, 121, 122, 123, 211, 212):*** This group, which makes up 29% of the total customer base, spends $2.8 million but only makes one transaction before quitting. A drop in order value and a big increase in orders placed after July 2019 point to discontent or evolving requirements. Recognizing the reasons behind their departure and putting recovery plans in place could lower attrition and recover lost income.
 <br>
 => These customer have used the service but no longer return. They account for 30% of the customers, we need to make our presence felt through different campaigns and try to win them back. Also, send them a personalized survey to collect valuable feedback.
 
 
-
-
-"The seasons do not push one another; neither do clouds race the wind across the sky. All things happen in their own good time"
+## "The seasons do not push one another; neither do clouds race the wind across the sky. All things happen in their own good time"
 
 #### Thanks for your time!
 #### If you have any questions or just want to chat, don't hesitate to get in touch. I'm always excited to talk about data and discover new possibilities!
