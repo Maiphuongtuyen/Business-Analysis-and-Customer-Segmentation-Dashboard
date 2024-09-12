@@ -124,7 +124,5 @@ Although the Lost Customer segment accounts for 30% of the customer base, they s
 => These customer have used the service but no longer return. They account for 30% of the customers, we need to make our presence felt through different campaigns and try to win them back. Also, send them a personalized survey to collect valuable feedback.
 
 
-## "The seasons do not push one another; neither do clouds race the wind across the sky. All things happen in their own good time"
-
 #### Thanks for your time!
 #### If you have any questions or just want to chat, don't hesitate to get in touch. I'm always excited to talk about data and discover new possibilities!
