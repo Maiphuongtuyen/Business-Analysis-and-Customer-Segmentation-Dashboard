@@ -10,12 +10,12 @@ https://learn.microsoft.com/en-us/dax/dax-sample-model
 ### Business Questions
 <br>Now, let's dive into analyzing the data to uncover some key business questions
 
-***1. Which channel is more profitable: Internet Sales or Reseller Sales? Let's analyze both. 
+1. Which channel is more profitable: Internet Sales or Reseller Sales? Let's analyze both. 
 2. What are our peak sales months and quarters? This will help us plan our future business strategies. 
 3. We need to assess our company's health. Are we on the right track or are we struggling? 
 4. Let's analyze the buying habits of our customers in each market. 
 5. Which products are our best sellers, and which ones should we consider discontinuing? 
-6. Finally, using the RFM model, let's analyze the purchasing behavior of different customer segments and make recommendations***
+6. Finally, using the RFM model, let's analyze the purchasing behavior of different customer segments and make recommendations
 
 ### Data Preprocessing
 Since my data includes two tables, FactInternetSales and FactResellerSales, which contain detailed information about orders from the Internet and reseller sales channels, respectively, I will append these two tables together using a UNION statement in SQL
