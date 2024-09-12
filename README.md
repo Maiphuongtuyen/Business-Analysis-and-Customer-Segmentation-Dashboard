@@ -3,7 +3,7 @@ In today's data-driven world, leveraging powerful tools and methodologies is cru
 
 ### About dataset
 <br>Adventure Works is a comprehensive sample database provided by Microsoft, designed to showcase the capabilities of SQL Server and other Microsoft data technologies. This fictional company, Adventure Works Cycles, is a global manufacturing business that produces and sells bicycles and related accessories. Since Microsoft's initial simulation data only contains order information for the years 2011-2014, you will be using a different version of Adventure Works that simulates orders from July 2017 to June 15, 2020.
-<br> #### Dataset Download Link:
+#### Dataset Download Link:
 https://learn.microsoft.com/en-us/dax/dax-sample-model
 <br>In this study, I have retained the necessary tables for the research process. The data schema diagram below includes additional tables that I created from SQL queries or DAX functions to further support the research process. The data schema is illustrated in the figure below
 
@@ -31,80 +31,81 @@ Choosing which channel to prioritize will vary depending on the goals of the bus
 #### 2. Exploring the Sales Cycle: Peak Sales
 Based on yearly data, November consistently achieves the highest sales. Peak sales months are Feb, May, Aug, and Nov. The frequent inventory replenishment programs of distributors, usually every three months, provide an explanation for this. In order to keep up with the spike in client demand, November—one of the busiest shopping months of the year—sees a major increase in sales.
 The third quarter is the highest-grossing quarter of the year if November is the monthly sales peak. This is because, in comparison to other months in this quarter, sales fluctuate less in the months of July, August, and September
-3. Analyzing the Company's Sales Performance: Positive or Negative?
-From July 2019, there has been a remarkable growth in internet users that has resulted in increased sales plus revenues. Even though resellers' profits for July, August, and September 2019 were negative this is still seen as good news. These losses can be offset by strong growth in the online channel showing a shift in the business model of the company towards a more positive direction. After 2017, sales figures have remained very impressive. In comparing the year-on-year sales for three years, we can see that there was significant increase in sales and profit. Also 2020 is better than 2019 so far with sales increasing by 58% and profits growing by 78% within first six months. We are yet to find out what happened during the third quarter which normally is referred to as peak season since the dataset is limited only up to mid-June 2020.
-Because the previous sales and profit indicators have grown year by year, along with a large number of customers coming from online channels, which has significantly contributed to the company's profits. I assess that the company is performing well in its business operations, which is a positive sign.
 
-4. Which Market Has the Most Potential?
+#### 3. Analyzing the Company's Sales Performance: Positive or Negative?
+From July 2019, there has been a remarkable growth in internet users that has resulted in increased sales plus revenues. Even though resellers' profits for July, August, and September 2019 were negative this is still seen as good news. These losses can be offset by strong growth in the online channel showing a shift in the business model of the company towards a more positive direction. After 2017, sales figures have remained very impressive. In comparing the year-on-year sales for three years, we can see that there was significant increase in sales and profit. Also 2020 is better than 2019 so far with sales increasing by 58% and profits growing by 78% within first six months. We are yet to find out what happened during the third quarter which normally is referred to as peak season since the dataset is limited only up to mid-June 2020.
+<br>Because the previous sales and profit indicators have grown year by year, along with a large number of customers coming from online channels, which has significantly contributed to the company's profits. I assess that the company is performing well in its business operations, which is a positive sign.
+
+#### 4. Which Market Has the Most Potential?
 
 The market with the greatest number of consumers and sales is North America. Approximately 95% of its clients are wholesalers, who also provide 13% of the company's profit. On the other hand, profit margin fluctuations have been significant, while sales growth has remained rather flat. November is the month with the highest revenue, and the third quarter often sees the most consistent business. Bicycles, components, and clothing are the top-selling items in this market. It is evident from the high prices and very low average profit per product that bicycles and their components are the main emphasis of this industry. Products that are best-selling every three months also fit this theme.
 
-Customers in Europe are more evenly distributed, accounting for 45% of sales and distributors for 55%, with individual customers providing 95% of earnings. From August 2018 to August 2019, sales increased dramatically, reaching a peak in August of 2019. And since then, profits have gone up significantly. The months that people shop most often are May, August, and November; revenue is highest in the third quarter. While the product selection is wider, European tastes are comparable to those of North America.
+<br>Customers in Europe are more evenly distributed, accounting for 45% of sales and distributors for 55%, with individual customers providing 95% of earnings. From August 2018 to August 2019, sales increased dramatically, reaching a peak in August of 2019. And since then, profits have gone up significantly. The months that people shop most often are May, August, and November; revenue is highest in the third quarter. While the product selection is wider, European tastes are comparable to those of North America.
 
-The Pacific region has the lowest sales, but since August 2019, sales have grown dramatically, increasing profitability. In this industry, however, revenue growth is greatest in the first quarter, with March seeing the largest sales. Of the three regions, the Pacific market has the lowest average cost per product—roughly $13—and the highest average profit—$15. These numbers imply that the majority of the market's purchases are accessories. This conclusion is reinforced by the top 10 best-selling goods, which, (unlike North America and Europe), are primarily accessories. This industry has seen consistent, robust sales growth since the third quarter of 2019. The top 5 best-selling goods often include accessories like helmets, drinks, and cages.
+<br>The Pacific region has the lowest sales, but since August 2019, sales have grown dramatically, increasing profitability. In this industry, however, revenue growth is greatest in the first quarter, with March seeing the largest sales. Of the three regions, the Pacific market has the lowest average cost per product—roughly $13—and the highest average profit—$15. These numbers imply that the majority of the market's purchases are accessories. This conclusion is reinforced by the top 10 best-selling goods, which, (unlike North America and Europe), are primarily accessories. This industry has seen consistent, robust sales growth since the third quarter of 2019. The top 5 best-selling goods often include accessories like helmets, drinks, and cages.
 
-The most promising market, according to sales and profit margins since August 2019, is Europe. Although it still has a sizable market share, North America is fast reaching saturation. Conversely, the Pacific market has not been fully exploited yet.
+<br>The most promising market, according to sales and profit margins since August 2019, is Europe. Although it still has a sizable market share, North America is fast reaching saturation. Conversely, the Pacific market has not been fully exploited yet.
 
 
-5. Which Products Should Be Discontinued and Which Should Be Invested In?
+#### 5. Which Products Should Be Discontinued and Which Should Be Invested In?
 
 The products with the highest revenue, highest sales, and steady increase over time are the most commercially successful ones
 
-Road bikes, mountain bikes, touring bikes, road frames, mountain frames, and mostly other bicycles and bicycle components are the products with the biggest revenue and sales. In addition, there are apparel and accessory items like helmets and jerseys. Since the number of units sold each year rises in comparison to the previous year, these products have demonstrated strong success and a consistent rising trend year over year.
-But when the median profit for each road bike and touring bike sold is calculated, the result is negative. With each road bike or touring bike sold, the business, on average, forfeits a part of its profit. This will not be a financially sustainable condition in the long run. To acquire market share and use an upselling method, the corporation is presumably pursuing a market penetration plan. The sharp increase in sales since July 2019 and the fact that bicycles and parts have a far smaller profit margin than apparel and accessories may both be explained by this. (For instance, an average bicycle costs $884 and brings in a profit of $50 per unit. On the other hand, clothing items that cost only $8 can generate a profit of $6).
-When a product continuously underperforms over time in terms of quantity sold as well as sales, I think it should be discontinued.
-Sales volume should be taken into account while examining the products that generate the least money. For instance, even though hat sales may not be great, this does not always imply that they are functioning poorly because revenue is impacted by both quantity and price. Hat sales are impressive, with over 8300 units sold (keeping in mind that other products typically have low sales volumes of less than 1000, depending on the market and price). With the exception of pumps and locks, we discovered that products like caps, socks, and cleansers have had favorable sales increase over the previous year.
-The two products with the lowest revenue and sales volume are pumps and locks, both of which had negative growth rates in 2019 and 2020. Actually, throughout the first half of 2020, not a single lock or pump was sold. In addition, sales of products like headsets and forks are the lowest, and their revenue has remained constant over the past few years.
+<br>Road bikes, mountain bikes, touring bikes, road frames, mountain frames, and mostly other bicycles and bicycle components are the products with the biggest revenue and sales. In addition, there are apparel and accessory items like helmets and jerseys. Since the number of units sold each year rises in comparison to the previous year, these products have demonstrated strong success and a consistent rising trend year over year.
+<br>But when the median profit for each road bike and touring bike sold is calculated, the result is negative. With each road bike or touring bike sold, the business, on average, forfeits a part of its profit. This will not be a financially sustainable condition in the long run. To acquire market share and use an upselling method, the corporation is presumably pursuing a market penetration plan. The sharp increase in sales since July 2019 and the fact that bicycles and parts have a far smaller profit margin than apparel and accessories may both be explained by this. (For instance, an average bicycle costs $884 and brings in a profit of $50 per unit. On the other hand, clothing items that cost only $8 can generate a profit of $6).
+<br>When a product continuously underperforms over time in terms of quantity sold as well as sales, I think it should be discontinued.
+<br>Sales volume should be taken into account while examining the products that generate the least money. For instance, even though hat sales may not be great, this does not always imply that they are functioning poorly because revenue is impacted by both quantity and price. Hat sales are impressive, with over 8300 units sold (keeping in mind that other products typically have low sales volumes of less than 1000, depending on the market and price). With the exception of pumps and locks, we discovered that products like caps, socks, and cleansers have had favorable sales increase over the previous year.
+<br>The two products with the lowest revenue and sales volume are pumps and locks, both of which had negative growth rates in 2019 and 2020. Actually, throughout the first half of 2020, not a single lock or pump was sold. In addition, sales of products like headsets and forks are the lowest, and their revenue has remained constant over the past few years.
 The top items that people most commonly buy in the same order are: Water Bottles and Bottle Cages, AWC Logo Caps and Long Sleeve Logo Jerseys, Helmets and AWC Logo Caps, Mountain Tire Tubes and Mountain Tires...
 
-6. Implementing the RFM Model
+#### 6. Implementing the RFM Model
 
-We will examine RFM model-based consumer segmentation in this investigation. Recency, frequency, and monetary value are the three main metrics that are employed by the RFM model, a popular method for client classification. How important is it to analyze consumer behavior? Customers who have made at least two transactions account for almost 93% of revenue in this dataset. Consequently, the company's expansion depends critically on keeping these clients and comprehending their purchasing patterns. We can categorize our consumers with the use of the RFM model, allowing us to develop strategies specifically for each group.
-
-Breaking Down the RFM Model:
+<br>We will examine RFM model-based consumer segmentation in this investigation. Recency, frequency, and monetary value are the three main metrics that are employed by the RFM model, a popular method for client classification. How important is it to analyze consumer behavior? Customers who have made at least two transactions account for almost 93% of revenue in this dataset. Consequently, the company's expansion depends critically on keeping these clients and comprehending their purchasing patterns. We can categorize our consumers with the use of the RFM model, allowing us to develop strategies specifically for each group.
+<br>
+#### Breaking Down the RFM Model:
 Recency: This measures how long it has been since a client made their last purchase. The customer's engagement increases with the recentness of the transaction. We will pick June 6, 2020, as the cutoff date for our analysis. We'll figure out how much time has passed since a customer's previous purchase and today.
-Frequency: This measures how frequently a buyer makes a transaction. The total number of orders a customer has placed during a three-year period (2017-2020) will be determined. Although bicycles are not usually acquired on a regular basis, we will use this period of time to obtain a general understanding of customer purchasing patterns.
-Monetary: This is the entire amount of money a client has spent during a given time frame. Once more, a three-year period will be used.
+<br>Frequency: This measures how frequently a buyer makes a transaction. The total number of orders a customer has placed during a three-year period (2017-2020) will be determined. Although bicycles are not usually acquired on a regular basis, we will use this period of time to obtain a general understanding of customer purchasing patterns.
+<br>Monetary: This is the entire amount of money a client has spent during a given time frame. Once more, a three-year period will be used.
 Scoring and Segmentation: Based on quartiles, we will assign scores of 1 to 4 to each customer after determining the values for Recency, Frequency, and Monetary. A greater Recency score will be awarded to customers who have made the most recent purchases; the same is true for frequency and monetary value. (Why did i use an RFM 4-point scale? Because the data was extremely skewed, a 4-point scale could prevent too few data points). We can divide up our consumer base into groups according to their scores after we receive the RFM scores. Customers that score highly in all three areas (RFM 444), for instance, are perhaps the most valuable ones we have, whereas those who score poorly (RFM 111) are probably less involved.
-Overview of Customer Behavior Analysis
+#### Overview of Customer Behavior Analysis
 The graph illustrates how customers' willingness to pay has sharply declined over time for orders. The average order value decreased by more than 10-15 times, from over $2,000 to an average of $100-$200, even though the number of orders climbed fivefold (from 400 to 2,000 per day). The time after July 2019 is correlated with both the considerable increase in order volume and the drop in order value. Consequently, it makes sense that starting in July 2019, the company's Internet channel saw a large rise in the number of individual clients (by 4-5 times) in all three areas (the Americas, Europe, and the Pacific).
-Rather than buying bicycles as they had in the past, customers mostly bought inexpensive goods like accessories and component parts. Bicycle sales, which accounted for 40–60% of all products sold before this time, fell by 25% after July 2019 and then fluctuated between 25–30%, which resulted in a significant decrease in the order value. Accessories, for example, used to make up only 10% of the products sold, but today they account for 30%.
-Since the number of returning customers who make purchases two or more times accounts for only 39% but contributes over 93% of the company's revenue, analyzing the customer base using the RFM model is essential to understanding customer purchasing behavior. In turn, helps in developing marketing strategies tailored to each corresponding customer segment
+<br>Rather than buying bicycles as they had in the past, customers mostly bought inexpensive goods like accessories and component parts. Bicycle sales, which accounted for 40–60% of all products sold before this time, fell by 25% after July 2019 and then fluctuated between 25–30%, which resulted in a significant decrease in the order value. Accessories, for example, used to make up only 10% of the products sold, but today they account for 30%.
+<br>Since the number of returning customers who make purchases two or more times accounts for only 39% but contributes over 93% of the company's revenue, analyzing the customer base using the RFM model is essential to understanding customer purchasing behavior. In turn, helps in developing marketing strategies tailored to each corresponding customer segment
 
-*Detailed RFM Analysis for Customer Segments
+#### *Detailed RFM Analysis for Customer Segments
 
 Although the Lost Customer segment accounts for 30% of the customer base, they spend an average of $100 per order and then leave, so their contribution to the company’s revenue is minimal. Other customer segments are similar; only the three segments 'Champions,' 'Loyal Customers,' and 'Need Attentions' generate nearly 90% of the company's revenue. The company needs to find ways to retain these customers and implement appropriate marketing programs. Additionally, it is important to find ways to attract the 'Potential Loyalists' segment, as they frequently purchase products and are almost as valuable as the Champions, but they have not yet spent as much per order as the top three segments. To facilitate the development of retention strategies for each customer segment, I have compiled the information below:
-
+<br>
 Champion Segment is Crucial (444, 434, 344, 443, 433): Although making up only 10% of the whole client base, the Champion segment brings in a healthy $74.6 million in sales, which accounts for a sizeable amount of the business's overall profits. These clients are extremely valued because their orders often total more than $2,200. Their buying habits have been consistent over the past two years, with the exception of a profit decline in July and September 2019 brought on by discount coupons. Sustaining revenue requires this area to be nurtured and maintained.
-
+<br>
 => They bought recently, buy often and spend the most. We should reward these customers. They promote our products, and they can be early adopters of our new launches.
-
+<br>
 Loyal Customers Provide Stability (244, 234, 334, 442, 441, 432, 431, 342, 341): Over $10 million is contributed by loyal customers, who make up 15% of the customer base. They began making more purchases in 2020, even though their order value varies more than the Champions' does. But their average order value has dropped, indicating a move in favor of less expensive goods. They may improve their profitability by finding ways to raise the value of their orders while keeping them frequent.
-
+<br>
 => They spend good money often, they are responsive to promotions. These customers are responsive to our promotions. We need to suggest higher-value products to them. Also, leverage them for reviews.
-
+<br>
 Potential Loyalists are Emerging (424, 423, 324, 323, 413, 414, 343): Despite making up only 4% of the total clientele, this group has sales of over $1 million, suggesting promise. Their frequency of purchases is similar to that of the Champions, but they have started to spend more money per time, which suggests room for expansion. These consumers could become Champions with the help of targeted marketing.
-
+<br>
 => They are recent customers, but spent a good amount and bough more than once. Engage them with long-term offers like loyalty programs or membership rewards, suggest other categories of products to them.
-
+<br>
 Potential Growth for Promising Customers (333, 332, 331, 313): This sector, which makes up 8% of the total customer base, has had a notable rise in orders in 2020, despite the relatively low order value of $700. Since the middle of 2019, the average order value has decreased, which may indicate price sensitivity or a change in consumer behavior. More potential in this market could be unlocked by promoting higher-value purchases.
-
+<br>
 => They are recent shoppers, but haven't spent much. Try to convert them into loyal customers by creating brand awareness and giving free trials.
-
+<br>
 Opportunities for Growth Are Provided by New consumers (422, 421, 412, 411, 311, 321, 312, 322): 18% of the customer base consists of new consumers who have just recently begun making purchases, with an average order value of $40. Even while they now generate less revenue, their significant share suggests that, should they be kept and developed into more lucrative sectors like Loyal or Champion customers, there may be room for future growth.
-
+<br>
 => They bought more recently but not often. For new users, make their onboarding experience smooth and provide assistance when needed.
-
+<br>
 Price Sensitive Require Different Strategies (131, 132, 141, 142, 231, 232, 241, 242): This little percentage of consumers (3%), who regularly place low-value orders of between $40 and $50, are extremely price sensitive. They buy a lot, so customized deals that keep them loyal without cutting into profit margins might work. Strategies like bundling or upselling could also raise the value of their order.
-
+<br>
 => They spend frequently, but at a low monetary value, possibly because they are picky or cautious with their spending. These are users looking for the best deal. We should recommend the highest-rated products and send discount communication.
-
+<br>
 Need Attention Is Not Fully Utilized (243, 233, 224, 214, 213, 134, 144, 143, 133): These customers generate the second-highest revenue category with $18.6 million, but their order frequency is low and their order interval is the longest (271 days). When they do make purchases, though, they often spend a lot—sometimes more than $11,000 in a single order. Increased engagement with this market could result in a significant increase in revenue. Because of the great value of this group, reactivation tactics and customized marketing could promote more regular purchases.
-
+<br>
 => Spent above recency, frequency and monetary values in the past, but have not bought for a while. We need to bring back these customers. Provide limited-period offers and recommend products based on their purchase history.
-
+<br>
 Recovering Lost Customers (111, 112, 113, 114, 121, 122, 123, 211, 212): This group, which makes up 29% of the total customer base, spends $2.8 million but only makes one transaction before quitting. A drop in order value and a big increase in orders placed after July 2019 point to discontent or evolving requirements. Recognizing the reasons behind their departure and putting recovery plans in place could lower attrition and recover lost income.
-
+<br>
 => These customer have used the service but no longer return. They account for 30% of the customers, we need to make our presence felt through different campaigns and try to win them back. Also, send them a personalized survey to collect valuable feedback.
 
 
@@ -112,7 +113,5 @@ Recovering Lost Customers (111, 112, 113, 114, 121, 122, 123, 211, 212): This gr
 
 "The seasons do not push one another; neither do clouds race the wind across the sky. All things happen in their own good time"
 
-Thanks for your time!
-Get In Touch
-
-If you have any questions or just want to chat, don't hesitate to get in touch. I'm always excited to talk about data and discover new possibilities!
+#### Thanks for your time!
+#### If you have any questions or just want to chat, don't hesitate to get in touch. I'm always excited to talk about data and discover new possibilities!
